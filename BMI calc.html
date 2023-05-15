@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Header>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5hiQF8Pj0sGVsP_fEZMY6e9rbyl7IRvEmXA&usqp=CAU" alt="">
+        <h1>bmi calculator</h1>
+    </Header>
+    <main>
+        <div style="margin-left: 45vh;margin-top: 30px;">
+            <h2>Input weight (kg)</h2>
+            <input id="wgtdsp" type="text" name="wgtdsp">
+        </div>
+        <div style="margin-top: 20px;margin-left: 45vh;">
+            <h2>Input height (cm)</h2>
+            <input id="hgtdsp" type="text" name="hgtdsp">
+        </div>
+        <div class="calcbtn" style="margin-top: 20px;margin-left: 75vh;">
+            <input onclick="bmidsp.value=(wgtdsp.value/(hgtdsp.value*hgtdsp.value))*10000" type="button" value="CALCULATE">
+        </div>
+        <div style="margin-top: 20px;margin-left: 45vh;">
+            <h2>BMI (kg/m^2) =</h2>
+            <input id="bmidsp" name="bmidsp" style="width: 60px;" type="text" name="display">
+            <img style="width: 40vh;height: 30vh;padding-left: 30vh;" src="https://slidechef.net/wp-content/uploads/2021/06/Free-BMI-Chart-Template-4.jpg" alt="">
+            
+        </div>
+    </main>
+    <footer></footer>
+    <script src="BMI calc.js"></script>
+</body>
+</html>
